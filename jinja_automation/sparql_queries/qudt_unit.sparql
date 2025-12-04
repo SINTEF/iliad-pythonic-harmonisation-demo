@@ -1,0 +1,13 @@
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?unit ?label
+WHERE {
+    ?unit a qudt:Unit .
+    OPTIONAL {
+        ?unit rdfs:label ?label .
+        FILTER(LANG(?label) = "" || LANG(?label) = "en")
+    }
+}
+LIMIT $limit
+OFFSET $offset

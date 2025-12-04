@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1234,
+    "sea_temperature_celsius": 4.6,
+    "timestamp": "2025-06-27T01:00:00Z",
+    "latitude": 70.41,
+    "longitude": 0.0
+  },
+  {
+    "id": 1235,
+    "sea_temperature_celsius": 5.1,
+    "timestamp": "2025-06-27T02:00:00Z",
+    "latitude": 70.42,
+    "longitude": 0.1
+  }
+]
