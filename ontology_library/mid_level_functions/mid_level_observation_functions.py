@@ -44,11 +44,3 @@ def create_oim_sosa_result_sea_temperature_degree_celsius(
         sea_temperature, observation_iri, unit, oim_sosa_result_iri
     )
     return oim_sosa_result_iri, oim_sosa_result_graph
-
-
-# def create_oim_sosa_result_temperature_degree_celsius(
-#     temperature: float, observation_uri: URIRef
-# ) -> Graph:
-#     unit = get_qudt_unit_degree_celsius()
-#
-#     return create_oim_sosa_result(temperature, observation_uri, unit)
