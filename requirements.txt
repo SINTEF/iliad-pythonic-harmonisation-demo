@@ -1,0 +1,4 @@
+pandas
+rdflib
+jinja2
+SPARQLWrapper
