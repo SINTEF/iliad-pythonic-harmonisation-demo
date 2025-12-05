@@ -78,6 +78,10 @@ Example: `high_level_observation_functions.py` contains the function for transfo
 
 ---
 
+![alt text](https://github.com/SINTEF/iliad-pythonic-harmonisation-demo/blob/main/img/python_hierarchy.png)
+
+
+
 ## Code Generation (Jinja + SPARQL)
 
 **Directory:** `jinja_automation/`
@@ -100,11 +104,6 @@ This keeps QUDT-related functions up-to-date automatically.
 - `utils.py` and `constants.py` – Helper utilities and namespaces.
 
 ---
-
-
-![alt text](https://github.com/SINTEF/iliad-pythonic-harmonisation-demo/blob/main/img/python_hierarchy.png)
-
-
 
 ## Reference
 
