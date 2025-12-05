@@ -120,27 +120,81 @@ def fetch_all_quantity_kinds(batch=1000):
     return quantity_kinds
 
 
+# def create_unit_functions():
+#     all_units = fetch_all_units()
+#
+#     units = [
+#         {"uri": b["unit"]["value"], "label": b.get("label", {}).get("value", "")}
+#         for b in all_units
+#     ]
+#
+#     print(f"Total units fetched: {len(units)}\n")
+#
+#     qudt_unit_functions = [
+#         {
+#             "name": f"get_qudt_unit_{sanitize_function_name(u['label'])}",
+#             "return_type": "URIRef",
+#             "namespace": "QUDT_UNIT",
+#             "docstring": f"Returns the URI for QUDT unit: {u['label']} ({u['uri']})",
+#             "constant": u["uri"].split("/")[-1].upper(),
+#         }
+#         for u in units
+#         if u["label"]
+#     ]
+#
+#     imports = [
+#         "from rdflib import URIRef",
+#         "from constants import QUDT_UNIT",
+#     ]
+#
+#     write_functions_with_template(
+#         filename="ontology_library/low_level_functions/qudt_unit_functions.py",
+#         functions=qudt_unit_functions,
+#         template_str=QUDT_UNITS_TEMPLATE,
+#         imports=imports,
+#         module_docstring="This module contains functions for the units in QUDT.",
+#     )
+
+
 def create_unit_functions():
     all_units = fetch_all_units()
 
-    units = [
-        {"uri": b["unit"]["value"], "label": b.get("label", {}).get("value", "")}
-        for b in all_units
-    ]
+    # Collapse by URI first (avoid multiple labels per same unit)
+    by_uri = {}
+    for b in all_units:
+        uri = b["unit"]["value"]
+        label = b.get("label", {}).get("value", "")
+        if not label:
+            continue
+        by_uri[uri] = label  # keep last or first; your choice
 
-    print(f"Total units fetched: {len(units)}\n")
+    units = [{"uri": uri, "label": label} for uri, label in by_uri.items()]
+    print(f"Total unique units (by URI): {len(units)}\n")
 
-    qudt_unit_functions = [
-        {
-            "name": f"get_qudt_unit_{sanitize_function_name(u['label'])}",
-            "return_type": "URIRef",
-            "namespace": "QUDT_UNIT",
-            "docstring": f"Returns the URI for QUDT unit: {u['label']} ({u['uri']})",
-            "constant": u["uri"].split("/")[-1].upper(),
-        }
-        for u in units
-        if u["label"]
-    ]
+    seen_names = set()
+    qudt_unit_functions = []
+
+    for u in units:
+        func_name = f"get_qudt_unit_{sanitize_function_name(u['label'])}"
+
+        if func_name in seen_names:
+            # Optional: log collision info
+            print(f"Skipping duplicate function name {func_name} for URI {u['uri']}")
+            continue
+
+        seen_names.add(func_name)
+
+        qudt_unit_functions.append(
+            {
+                "name": func_name,
+                "return_type": "URIRef",
+                "namespace": "QUDT_UNIT",
+                "docstring": (
+                    f"Returns the URI for QUDT unit: {u['label']} ({u['uri']})"
+                ),
+                "constant": u["uri"].split("/")[-1].upper(),
+            }
+        )
 
     imports = [
         "from rdflib import URIRef",
