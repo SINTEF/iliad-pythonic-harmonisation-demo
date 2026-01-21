@@ -27,7 +27,12 @@ Install with dev dependencies:
 uv sync --extra dev
 ```
 
-Lint and format code:
+Set up pre-commit hooks (auto-runs ruff on commit):
+```bash
+uv run pre-commit install
+```
+
+Lint and format code manually:
 ```bash
 uv run ruff check --fix .
 uv run ruff format .
