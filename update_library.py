@@ -10,7 +10,7 @@ from jinja_automation.jinja_templates.jinja_templates import (
     QUDT_QUANTITY_KINDS_TEMPLATE,
     QUDT_UNITS_TEMPLATE,
 )
-from utils import sanitize_function_name
+from ontology_library.utils import sanitize_function_name
 
 
 def fetch_qudt_units(
@@ -130,6 +130,7 @@ def fetch_all_quantity_kinds(batch: int = 1000) -> list[dict[str, Any]]:
 
 def create_unit_functions() -> None:
     all_units = fetch_all_units()
+    print(all_units["label"])
 
     # Collapse by URI first (avoid multiple labels per same unit)
     by_uri = {}
@@ -170,7 +171,7 @@ def create_unit_functions() -> None:
 
     imports = [
         "from rdflib import URIRef",
-        "from constants import QUDT_UNIT",
+        "from ontology_library.constants import QUDT_UNIT",
     ]
 
     write_functions_with_template(
@@ -185,7 +186,7 @@ def create_unit_functions() -> None:
 def create_quantity_kind_functions() -> None:
     imports = [
         "from rdflib import URIRef",
-        "from constants import QUDT_QUANTITY_KIND",
+        "from ontology_library.constants import QUDT_QUANTITY_KIND",
     ]
 
     all_quantity_kinds = fetch_all_quantity_kinds()

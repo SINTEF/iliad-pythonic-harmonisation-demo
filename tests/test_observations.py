@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from rdflib import Graph, Literal, URIRef
 from rdflib.namespace import RDF
 
-from constants import SOSA
+from ontology_library.constants import SOSA
 from ontology_library.high_level_functions.high_level_observation_functions import (
     harmonise_oim_sosa_observation_sea_temperature_degree_celsius,
 )

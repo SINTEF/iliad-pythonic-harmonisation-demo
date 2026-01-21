@@ -4,7 +4,7 @@ from rdflib import Graph
 from ontology_library.high_level_functions.high_level_observation_functions import (
     harmonise_oim_sosa_observation_sea_temperature_degree_celsius,
 )
-from utils import bind_namespaces
+from ontology_library.utils import bind_namespaces
 
 
 def main() -> None:

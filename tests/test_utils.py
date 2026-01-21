@@ -1,6 +1,6 @@
 from rdflib import Graph
 
-from utils import bind_namespaces, sanitize_function_name
+from ontology_library.utils import bind_namespaces, sanitize_function_name
 
 
 def test_sanitize_function_name_simple_unit():

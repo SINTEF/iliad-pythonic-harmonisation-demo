@@ -6,22 +6,22 @@
 
 oim-obs:1234 a sosa:Observation ;
     sosa:hasFeatureOfInterest <https://w3id.org/iliad/oim/features_of_interest/loc_70.41_0.0> ;
-    sosa:hasResult <https://w3id.org/iliad/oim/results/2026-01-21_13:56:59.368916> ;
+    sosa:hasResult <https://w3id.org/iliad/oim/results/2026-01-21_15:40:51.427051> ;
     sosa:observedProperty <https://w3id.org/iliad/oim/property/seaTemperature> ;
     sosa:resultTime "2025-06-27T01:00:00+00:00"^^xsd:dateTime .
 
 oim-obs:1235 a sosa:Observation ;
     sosa:hasFeatureOfInterest <https://w3id.org/iliad/oim/features_of_interest/loc_70.42_0.1> ;
-    sosa:hasResult <https://w3id.org/iliad/oim/results/2026-01-21_13:56:59.369638> ;
+    sosa:hasResult <https://w3id.org/iliad/oim/results/2026-01-21_15:40:51.427868> ;
     sosa:observedProperty <https://w3id.org/iliad/oim/property/seaTemperature> ;
     sosa:resultTime "2025-06-27T02:00:00+00:00"^^xsd:dateTime .
 
-<https://w3id.org/iliad/oim/results/2026-01-21_13:56:59.368916> a qudt:QuantityValue,
+<https://w3id.org/iliad/oim/results/2026-01-21_15:40:51.427051> a qudt:QuantityValue,
         sosa:Result ;
     sosa:hasUnit qudt_unit:DEG_C ;
     sosa:hasValue "4.6"^^xsd:float .
 
-<https://w3id.org/iliad/oim/results/2026-01-21_13:56:59.369638> a qudt:QuantityValue,
+<https://w3id.org/iliad/oim/results/2026-01-21_15:40:51.427868> a qudt:QuantityValue,
         sosa:Result ;
     sosa:hasUnit qudt_unit:DEG_C ;
     sosa:hasValue "5.1"^^xsd:float .

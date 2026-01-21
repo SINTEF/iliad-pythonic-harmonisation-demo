@@ -5,7 +5,7 @@ from datetime import datetime
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDF, XSD
 
-from constants import QUDT, SOSA
+from ontology_library.constants import QUDT, SOSA
 
 # Import automatically generated functions
 

@@ -1,7 +1,7 @@
 """This module contains functions for the quantity kinds in QUDT."""
 
 from rdflib import URIRef
-from constants import QUDT_QUANTITY_KIND
+from ontology_library.constants import QUDT_QUANTITY_KIND
 
 
 def get_qudt_quantity_kind_dimensionless_ratio() -> URIRef:
@@ -1446,6 +1446,16 @@ def get_qudt_quantity_kind_volume() -> URIRef:
 def get_qudt_quantity_kind_catalytic_activity_concentration() -> URIRef:
     """Returns the URI for QUDT quantity kind: Catalytic Activity Concentration (http://qudt.org/vocab/quantitykind/CatalyticActivityConcentration)"""
     return QUDT_QUANTITY_KIND["CATALYTICACTIVITYCONCENTRATION"]
+
+
+def get_qudt_quantity_kind_cation_exchange_capacity() -> URIRef:
+    """Returns the URI for QUDT quantity kind: Cation Exchange Capacity (http://qudt.org/vocab/quantitykind/CationExchangeCapacity)"""
+    return QUDT_QUANTITY_KIND["CATIONEXCHANGECAPACITY"]
+
+
+def get_qudt_quantity_kind_reactive_charge_per_mass() -> URIRef:
+    """Returns the URI for QUDT quantity kind: Reactive Charge per Mass (http://qudt.org/vocab/quantitykind/ReactiveChargePerMass)"""
+    return QUDT_QUANTITY_KIND["REACTIVECHARGEPERMASS"]
 
 
 def get_qudt_quantity_kind_celsius_temperature() -> URIRef:
@@ -4405,6 +4415,11 @@ def get_qudt_quantity_kind_ratio_of_specific_heat_capacities() -> URIRef:
 def get_qudt_quantity_kind_reaction_energy() -> URIRef:
     """Returns the URI for QUDT quantity kind: Reaction Energy (http://qudt.org/vocab/quantitykind/ReactionEnergy)"""
     return QUDT_QUANTITY_KIND["REACTIONENERGY"]
+
+
+def get_qudt_quantity_kind_reactive_charge() -> URIRef:
+    """Returns the URI for QUDT quantity kind: Reactive Charge (http://qudt.org/vocab/quantitykind/ReactiveCharge)"""
+    return QUDT_QUANTITY_KIND["REACTIVECHARGE"]
 
 
 def get_qudt_quantity_kind_reactive_power() -> URIRef:

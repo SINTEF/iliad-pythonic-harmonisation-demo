@@ -1,7 +1,7 @@
 """This module contains functions for the units in QUDT."""
 
 from rdflib import URIRef
-from constants import QUDT_UNIT
+from ontology_library.constants import QUDT_UNIT
 
 
 def get_qudt_unit_kilogram() -> URIRef:
@@ -4852,6 +4852,41 @@ def get_qudt_unit_poundal_inch() -> URIRef:
     return QUDT_UNIT["PDL-IN"]
 
 
+def get_qudt_unit_mole_per_gram_hour() -> URIRef:
+    """Returns the URI for QUDT unit: Mole per Gram Hour (http://qudt.org/vocab/unit/MOL-PER-GM-HR)"""
+    return QUDT_UNIT["MOL-PER-GM-HR"]
+
+
+def get_qudt_unit_micromole_per_gram_hour() -> URIRef:
+    """Returns the URI for QUDT unit: Micromole per Gram Hour (http://qudt.org/vocab/unit/MicroMOL-PER-GM-HR)"""
+    return QUDT_UNIT["MICROMOL-PER-GM-HR"]
+
+
+def get_qudt_unit_micromole_per_gram_second() -> URIRef:
+    """Returns the URI for QUDT unit: Micromole per Gram Second (http://qudt.org/vocab/unit/MicroMOL-PER-GM-SEC)"""
+    return QUDT_UNIT["MICROMOL-PER-GM-SEC"]
+
+
+def get_qudt_unit_micromole_per_kilogram_year() -> URIRef:
+    """Returns the URI for QUDT unit: Micromole per Kilogram Year (http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM-YR)"""
+    return QUDT_UNIT["MICROMOL-PER-KILOGM-YR"]
+
+
+def get_qudt_unit_nanomole_per_gram_hour() -> URIRef:
+    """Returns the URI for QUDT unit: Nanomole per Gram Hour (http://qudt.org/vocab/unit/NanoMOL-PER-GM-HR)"""
+    return QUDT_UNIT["NANOMOL-PER-GM-HR"]
+
+
+def get_qudt_unit_nanomole_per_gram_second() -> URIRef:
+    """Returns the URI for QUDT unit: Nanomole per Gram Second (http://qudt.org/vocab/unit/NanoMOL-PER-GM-SEC)"""
+    return QUDT_UNIT["NANOMOL-PER-GM-SEC"]
+
+
+def get_qudt_unit_nanomole_per_microgram_hour() -> URIRef:
+    """Returns the URI for QUDT unit: Nanomole per Microgram Hour (http://qudt.org/vocab/unit/NanoMOL-PER-MicroGM-HR)"""
+    return QUDT_UNIT["NANOMOL-PER-MICROGM-HR"]
+
+
 def get_qudt_unit_octet_per_second() -> URIRef:
     """Returns the URI for QUDT unit: Octet per Second (http://qudt.org/vocab/unit/OCTET-PER-SEC)"""
     return QUDT_UNIT["OCTET-PER-SEC"]
@@ -5660,6 +5695,11 @@ def get_qudt_unit_picomole_per_litre_hour() -> URIRef:
 def get_qudt_unit_picomole_per_cubic_metre_second() -> URIRef:
     """Returns the URI for QUDT unit: Picomole per Cubic Metre Second (http://qudt.org/vocab/unit/PicoMOL-PER-M3-SEC)"""
     return QUDT_UNIT["PICOMOL-PER-M3-SEC"]
+
+
+def get_qudt_unit_milliequivalent_per_hectogram() -> URIRef:
+    """Returns the URI for QUDT unit: Milliequivalent per Hectogram (http://qudt.org/vocab/unit/MilliEQ-PER-HectoGM)"""
+    return QUDT_UNIT["MILLIEQ-PER-HECTOGM"]
 
 
 def get_qudt_unit_degree_celsius_growing_cereal() -> URIRef:
@@ -10574,6 +10614,16 @@ def get_qudt_unit_percent_per_year() -> URIRef:
     return QUDT_UNIT["PERCENT-PER-YR"]
 
 
+def get_qudt_unit_equivalent() -> URIRef:
+    """Returns the URI for QUDT unit: Equivalent (http://qudt.org/vocab/unit/EQ)"""
+    return QUDT_UNIT["EQ"]
+
+
+def get_qudt_unit_milliequivalent() -> URIRef:
+    """Returns the URI for QUDT unit: Milliequivalent (http://qudt.org/vocab/unit/MilliEQ)"""
+    return QUDT_UNIT["MILLIEQ"]
+
+
 def get_qudt_unit_giga_volt_ampere_reactive() -> URIRef:
     """Returns the URI for QUDT unit: Giga Volt Ampere Reactive (http://qudt.org/vocab/unit/GigaVAR)"""
     return QUDT_UNIT["GIGAVAR"]
@@ -11077,16 +11127,6 @@ def get_qudt_unit_cubic_kilometre_per_square_second() -> URIRef:
 def get_qudt_unit_cubic_metre_per_square_second() -> URIRef:
     """Returns the URI for QUDT unit: Cubic Metre per Square Second (http://qudt.org/vocab/unit/M3-PER-SEC2)"""
     return QUDT_UNIT["M3-PER-SEC2"]
-
-
-def get_qudt_unit_megapascal_quintic_placeholder() -> URIRef:
-    """Returns the URI for QUDT unit: Megapascal Quintic Placeholder (http://qudt.org/vocab/unit/MegaPA-M0dot5)"""
-    return QUDT_UNIT["MEGAPA-M0DOT5"]
-
-
-def get_qudt_unit_pascal_quintic_placeholder() -> URIRef:
-    """Returns the URI for QUDT unit: Pascal Quintic Placeholder (http://qudt.org/vocab/unit/PA-M0dot5)"""
-    return QUDT_UNIT["PA-M0DOT5"]
 
 
 def get_qudt_unit_brewster() -> URIRef:
@@ -12679,11 +12719,6 @@ def get_qudt_unit_metre_square_second() -> URIRef:
     return QUDT_UNIT["M-SEC2"]
 
 
-def get_qudt_unit_placeholder() -> URIRef:
-    """Returns the URI for QUDT unit: Placeholder (http://qudt.org/vocab/unit/M0dot)"""
-    return QUDT_UNIT["M0DOT"]
-
-
 def get_qudt_unit_square_metre_square_hertz() -> URIRef:
     """Returns the URI for QUDT unit: Square Metre Square Hertz (http://qudt.org/vocab/unit/M2-HZ2)"""
     return QUDT_UNIT["M2-HZ2"]
@@ -12799,11 +12834,6 @@ def get_qudt_unit_quartic_metre_per_second() -> URIRef:
     return QUDT_UNIT["M4-PER-SEC"]
 
 
-def get_qudt_unit_mole_per_gram_hour() -> URIRef:
-    """Returns the URI for QUDT unit: Mole per Gram Hour (http://qudt.org/vocab/unit/MOL-PER-GM-HR)"""
-    return QUDT_UNIT["MOL-PER-GM-HR"]
-
-
 def get_qudt_unit_mole_per_kilogram_kelvin() -> URIRef:
     """Returns the URI for QUDT unit: Mole per Kilogram Kelvin (http://qudt.org/vocab/unit/MOL-PER-KiloGM-K)"""
     return QUDT_UNIT["MOL-PER-KILOGM-K"]
@@ -12897,16 +12927,6 @@ def get_qudt_unit_microgram_per_cubic_metre_kelvin() -> URIRef:
 def get_qudt_unit_micrometre_per_millilitre() -> URIRef:
     """Returns the URI for QUDT unit: Micrometre per Millilitre (http://qudt.org/vocab/unit/MicroM-PER-MilliL)"""
     return QUDT_UNIT["MICROM-PER-MILLIL"]
-
-
-def get_qudt_unit_micromole_per_gram_hour() -> URIRef:
-    """Returns the URI for QUDT unit: Micromole per Gram Hour (http://qudt.org/vocab/unit/MicroMOL-PER-GM-HR)"""
-    return QUDT_UNIT["MICROMOL-PER-GM-HR"]
-
-
-def get_qudt_unit_micromole_per_gram_second() -> URIRef:
-    """Returns the URI for QUDT unit: Micromole per Gram Second (http://qudt.org/vocab/unit/MicroMOL-PER-GM-SEC)"""
-    return QUDT_UNIT["MICROMOL-PER-GM-SEC"]
 
 
 def get_qudt_unit_micromole_per_square_metre() -> URIRef:
@@ -13269,8 +13289,8 @@ def get_qudt_unit_milliwatt_per_square_centimetre_micrometre_steradian() -> URIR
     return QUDT_UNIT["MILLIW-PER-CENTIM2-MICROM-SR"]
 
 
-def get_qudt_unit_newton_metre_per_quintic_placeholder() -> URIRef:
-    """Returns the URI for QUDT unit: Newton Metre per Quintic Placeholder (http://qudt.org/vocab/unit/N-M-PER-W0dot5)"""
+def get_qudt_unit_newton_metre_per_square_root_watt() -> URIRef:
+    """Returns the URI for QUDT unit: Newton Metre per Square Root Watt (http://qudt.org/vocab/unit/N-M-PER-W0dot5)"""
     return QUDT_UNIT["N-M-PER-W0DOT5"]
 
 
@@ -13302,21 +13322,6 @@ def get_qudt_unit_number_per_kilogram() -> URIRef:
 def get_qudt_unit_number_per_milligram() -> URIRef:
     """Returns the URI for QUDT unit: Number per Milligram (http://qudt.org/vocab/unit/NUM-PER-MilliGM)"""
     return QUDT_UNIT["NUM-PER-MILLIGM"]
-
-
-def get_qudt_unit_nanomole_per_gram_hour() -> URIRef:
-    """Returns the URI for QUDT unit: Nanomole per Gram Hour (http://qudt.org/vocab/unit/NanoMOL-PER-GM-HR)"""
-    return QUDT_UNIT["NANOMOL-PER-GM-HR"]
-
-
-def get_qudt_unit_nanomole_per_gram_second() -> URIRef:
-    """Returns the URI for QUDT unit: Nanomole per Gram Second (http://qudt.org/vocab/unit/NanoMOL-PER-GM-SEC)"""
-    return QUDT_UNIT["NANOMOL-PER-GM-SEC"]
-
-
-def get_qudt_unit_nanomole_per_microgram_hour() -> URIRef:
-    """Returns the URI for QUDT unit: Nanomole per Microgram Hour (http://qudt.org/vocab/unit/NanoMOL-PER-MicroGM-HR)"""
-    return QUDT_UNIT["NANOMOL-PER-MICROGM-HR"]
 
 
 def get_qudt_unit_nanomole_per_micromole() -> URIRef:
@@ -14042,6 +14047,11 @@ def get_qudt_unit_millilitre_per_cubic_metre() -> URIRef:
 def get_qudt_unit_cubic_millimetre_per_cubic_metre() -> URIRef:
     """Returns the URI for QUDT unit: Cubic Millimetre per Cubic Metre (http://qudt.org/vocab/unit/MilliM3-PER-M3)"""
     return QUDT_UNIT["MILLIM3-PER-M3"]
+
+
+def get_qudt_unit_litre_per_hectare() -> URIRef:
+    """Returns the URI for QUDT unit: Litre per Hectare (http://qudt.org/vocab/unit/L-PER-HA)"""
+    return QUDT_UNIT["L-PER-HA"]
 
 
 def get_qudt_unit_cubic_metre_per_hectare() -> URIRef:

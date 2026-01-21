@@ -4,7 +4,7 @@ import re
 
 from rdflib import Graph
 
-from constants import (
+from ontology_library.constants import (
     OIM_FEATURE,
     OIM_OBS,
     OIM_PROPERTY,
