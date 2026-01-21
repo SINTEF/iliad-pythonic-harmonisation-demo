@@ -130,7 +130,6 @@ def fetch_all_quantity_kinds(batch: int = 1000) -> list[dict[str, Any]]:
 
 def create_unit_functions() -> None:
     all_units = fetch_all_units()
-    print(all_units["label"])
 
     # Collapse by URI first (avoid multiple labels per same unit)
     by_uri = {}
