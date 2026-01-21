@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 from string import Template as StringTemplate
+from typing import Any
 
 from jinja2 import Template as JinjaTemplate
 from SPARQLWrapper import JSON, SPARQLWrapper
@@ -11,11 +14,11 @@ from utils import sanitize_function_name
 
 
 def fetch_qudt_units(
-    endpoint_url="https://www.qudt.org/fuseki/qudt/query",
-    query_file="queries/qudt_units.sparql",
-    limit=1000,
-    offset=0,
-):
+    endpoint_url: str = "https://www.qudt.org/fuseki/qudt/query",
+    query_file: str = "queries/qudt_units.sparql",
+    limit: int = 1000,
+    offset: int = 0,
+) -> list[dict[str, Any]]:
     # Read the SPARQL query template from file
     with open(query_file, encoding="utf-8") as f:
         query_template = f.read()
@@ -37,11 +40,11 @@ def fetch_qudt_units(
 
 
 def fetch_qudt_quantity_kinds(
-    endpoint_url="https://www.qudt.org/fuseki/qudt/query",
-    query_file="./jinja_automation/sparql_queries/qudt_quantity_kind.sparql",
-    limit=1000,
-    offset=0,
-):
+    endpoint_url: str = "https://www.qudt.org/fuseki/qudt/query",
+    query_file: str = "./jinja_automation/sparql_queries/qudt_quantity_kind.sparql",
+    limit: int = 1000,
+    offset: int = 0,
+) -> list[dict[str, Any]]:
     # Load SPARQL query from file
     with open(query_file, encoding="utf-8") as f:
         query_template = f.read()
@@ -63,8 +66,12 @@ def fetch_qudt_quantity_kinds(
 
 
 def write_functions_with_template(
-    filename, functions, template_str, imports=None, module_docstring=None
-):
+    filename: str,
+    functions: list[dict[str, str]],
+    template_str: str,
+    imports: list[str] | None = None,
+    module_docstring: str | None = None,
+) -> None:
     qudt_unit_template = JinjaTemplate(template_str.strip())
 
     rendered_body = qudt_unit_template.render(functions=functions)
@@ -91,7 +98,7 @@ def write_functions_with_template(
     print(f"Functions written to '{filename}'")
 
 
-def fetch_all_units(batch=1000):
+def fetch_all_units(batch: int = 1000) -> list[dict[str, Any]]:
     units = []
     offset = 0
     while True:
@@ -108,7 +115,7 @@ def fetch_all_units(batch=1000):
     return units
 
 
-def fetch_all_quantity_kinds(batch=1000):
+def fetch_all_quantity_kinds(batch: int = 1000) -> list[dict[str, Any]]:
     quantity_kinds = []
     offset = 0
     while True:
@@ -121,7 +128,7 @@ def fetch_all_quantity_kinds(batch=1000):
     return quantity_kinds
 
 
-def create_unit_functions():
+def create_unit_functions() -> None:
     all_units = fetch_all_units()
 
     # Collapse by URI first (avoid multiple labels per same unit)
@@ -175,7 +182,7 @@ def create_unit_functions():
     )
 
 
-def create_quantity_kind_functions():
+def create_quantity_kind_functions() -> None:
     imports = [
         "from rdflib import URIRef",
         "from constants import QUDT_QUANTITY_KIND",

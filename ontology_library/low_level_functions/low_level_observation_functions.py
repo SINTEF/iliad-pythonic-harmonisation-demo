@@ -39,7 +39,7 @@ def get_oim_quantity_kind_sea_temperature() -> URIRef:
 
 
 ## OBSERVATION FUNCTIONS ##
-def create_oim_sosa_observation_uri(observation_id: str = None) -> URIRef:
+def create_oim_sosa_observation_uri(observation_id: str | None = None) -> URIRef:
     OIM_OBS = get_oim_observation_namespace()
 
     # If no observation_id is provided, use the current datetime
@@ -125,7 +125,7 @@ def create_sosa_result(
 
 
 ## SENSOR FUNCTIONS ##
-def create_oim_sosa_sensor_uri(sensor_id: str = None) -> URIRef:
+def create_oim_sosa_sensor_uri(sensor_id: str | None = None) -> URIRef:
     # Create the URI of the new observation individual
     OIM_SENSORS = get_oim_sensor_namespace()
 

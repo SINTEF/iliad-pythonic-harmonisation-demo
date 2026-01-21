@@ -7,7 +7,7 @@ from ontology_library.high_level_functions.high_level_observation_functions impo
 from utils import bind_namespaces
 
 
-def main():
+def main() -> None:
     # Load the JSON data into a DataFrame
     df = pd.read_json("data/sea_temp.json")
 
