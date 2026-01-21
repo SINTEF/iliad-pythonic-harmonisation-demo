@@ -3,6 +3,7 @@
 from rdflib import URIRef
 from constants import QUDT_UNIT
 
+
 def get_qudt_unit_kilogram() -> URIRef:
     """Returns the URI for QUDT unit: Kilogram (http://qudt.org/vocab/unit/KiloGM)"""
     return QUDT_UNIT["KILOGM"]
@@ -1583,7 +1584,9 @@ def get_qudt_unit_astronomical_unit() -> URIRef:
     return QUDT_UNIT["AU"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_pound_force() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_pound_force() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Pound Force (http://qudt.org/vocab/unit/BTU_IT-PER-LB_F)"""
     return QUDT_UNIT["BTU_IT-PER-LB_F"]
 
@@ -3978,42 +3981,58 @@ def get_qudt_unit_square_foot_second_degree_fahrenheit() -> URIRef:
     return QUDT_UNIT["FT2-SEC-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot_hour() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot_hour() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Square Foot Hour (http://qudt.org/vocab/unit/BTU_IT-PER-FT2-HR)"""
     return QUDT_UNIT["BTU_IT-PER-FT2-HR"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot_second() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot_second() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Square Foot Second (http://qudt.org/vocab/unit/BTU_IT-PER-FT2-SEC)"""
     return QUDT_UNIT["BTU_IT-PER-FT2-SEC"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_hour_square_foot() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_hour_square_foot() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Hour Square Foot (http://qudt.org/vocab/unit/BTU_IT-PER-HR-FT2)"""
     return QUDT_UNIT["BTU_IT-PER-HR-FT2"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_square_inch_second() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_square_inch_second() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Square Inch Second (http://qudt.org/vocab/unit/BTU_IT-PER-IN2-SEC)"""
     return QUDT_UNIT["BTU_IT-PER-IN2-SEC"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_second_square_foot() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_second_square_foot() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Second Square Foot (http://qudt.org/vocab/unit/BTU_IT-PER-SEC-FT2)"""
     return QUDT_UNIT["BTU_IT-PER-SEC-FT2"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_square_foot_hour() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_square_foot_hour() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Square Foot Hour (http://qudt.org/vocab/unit/BTU_TH-PER-FT2-HR)"""
     return QUDT_UNIT["BTU_TH-PER-FT2-HR"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_square_foot_minute() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_square_foot_minute() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Square Foot Minute (http://qudt.org/vocab/unit/BTU_TH-PER-FT2-MIN)"""
     return QUDT_UNIT["BTU_TH-PER-FT2-MIN"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_square_foot_second() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_square_foot_second() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Square Foot Second (http://qudt.org/vocab/unit/BTU_TH-PER-FT2-SEC)"""
     return QUDT_UNIT["BTU_TH-PER-FT2-SEC"]
 
@@ -5723,52 +5742,72 @@ def get_qudt_unit_watt_per_square_metre_kelvin() -> URIRef:
     return QUDT_UNIT["W-PER-M2-K"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot_hour_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot_hour_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Square Foot Hour Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-PER-FT2-HR-DEG_F)"""
     return QUDT_UNIT["BTU_IT-PER-FT2-HR-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot_second_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot_second_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Square Foot Second Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-PER-FT2-SEC-DEG_F)"""
     return QUDT_UNIT["BTU_IT-PER-FT2-SEC-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_hour_square_foot_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_hour_square_foot_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Hour Square Foot Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-PER-HR-FT2-DEG_F)"""
     return QUDT_UNIT["BTU_IT-PER-HR-FT2-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_hour_square_foot_degree_rankine() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_hour_square_foot_degree_rankine() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Hour Square Foot Degree Rankine (http://qudt.org/vocab/unit/BTU_IT-PER-HR-FT2-DEG_R)"""
     return QUDT_UNIT["BTU_IT-PER-HR-FT2-DEG_R"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_second_square_foot_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_second_square_foot_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Second Square Foot Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-PER-SEC-FT2-DEG_F)"""
     return QUDT_UNIT["BTU_IT-PER-SEC-FT2-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_second_square_foot_degree_rankine() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_second_square_foot_degree_rankine() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Second Square Foot Degree Rankine (http://qudt.org/vocab/unit/BTU_IT-PER-SEC-FT2-DEG_R)"""
     return QUDT_UNIT["BTU_IT-PER-SEC-FT2-DEG_R"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_hour_square_foot_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_hour_square_foot_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Hour Square Foot Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_TH-PER-HR-FT2-DEG_F)"""
     return QUDT_UNIT["BTU_TH-PER-HR-FT2-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_second_square_foot_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_second_square_foot_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Second Square Foot Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_TH-PER-SEC-FT2-DEG_F)"""
     return QUDT_UNIT["BTU_TH-PER-SEC-FT2-DEG_F"]
 
 
-def get_qudt_unit_international_table_calorie_per_second_square_centimetre_kelvin() -> URIRef:
+def get_qudt_unit_international_table_calorie_per_second_square_centimetre_kelvin() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: International Table Calorie per Second Square Centimetre Kelvin (http://qudt.org/vocab/unit/CAL_IT-PER-SEC-CentiM2-K)"""
     return QUDT_UNIT["CAL_IT-PER-SEC-CENTIM2-K"]
 
 
-def get_qudt_unit_thermochemical_calorie_per_second_square_centimetre_kelvin() -> URIRef:
+def get_qudt_unit_thermochemical_calorie_per_second_square_centimetre_kelvin() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Thermochemical Calorie per Second Square Centimetre Kelvin (http://qudt.org/vocab/unit/CAL_TH-PER-SEC-CentiM2-K)"""
     return QUDT_UNIT["CAL_TH-PER-SEC-CENTIM2-K"]
 
@@ -6013,12 +6052,16 @@ def get_qudt_unit_thermochemical_calorie_per_second() -> URIRef:
     return QUDT_UNIT["CAL_TH-PER-SEC"]
 
 
-def get_qudt_unit_kilo_british_thermal_unit_international_definition_per_hour() -> URIRef:
+def get_qudt_unit_kilo_british_thermal_unit_international_definition_per_hour() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Kilo British Thermal Unit (international Definition) per Hour (http://qudt.org/vocab/unit/KiloBTU_IT-PER-HR)"""
     return QUDT_UNIT["KILOBTU_IT-PER-HR"]
 
 
-def get_qudt_unit_kilo_british_thermal_unit_thermochemical_definition_per_hour() -> URIRef:
+def get_qudt_unit_kilo_british_thermal_unit_thermochemical_definition_per_hour() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Kilo British Thermal Unit (thermochemical Definition) per Hour (http://qudt.org/vocab/unit/KiloBTU_TH-PER-HR)"""
     return QUDT_UNIT["KILOBTU_TH-PER-HR"]
 
@@ -6048,7 +6091,9 @@ def get_qudt_unit_kilo_thermochemical_calorie_per_second() -> URIRef:
     return QUDT_UNIT["KILOCAL_TH-PER-SEC"]
 
 
-def get_qudt_unit_mega_british_thermal_unit_international_definition_per_hour() -> URIRef:
+def get_qudt_unit_mega_british_thermal_unit_international_definition_per_hour() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Mega British Thermal Unit (international Definition) per Hour (http://qudt.org/vocab/unit/MegaBTU_IT-PER-HR)"""
     return QUDT_UNIT["MEGABTU_IT-PER-HR"]
 
@@ -7013,12 +7058,16 @@ def get_qudt_unit_square_metre_per_volt_second() -> URIRef:
     return QUDT_UNIT["M2-PER-V-SEC"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_cubic_foot() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_cubic_foot() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Cubic Foot (http://qudt.org/vocab/unit/BTU_IT-PER-FT3)"""
     return QUDT_UNIT["BTU_IT-PER-FT3"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_cubic_foot() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_cubic_foot() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Cubic Foot (http://qudt.org/vocab/unit/BTU_TH-PER-FT3)"""
     return QUDT_UNIT["BTU_TH-PER-FT3"]
 
@@ -7068,12 +7117,16 @@ def get_qudt_unit_millijoule_per_square_metre() -> URIRef:
     return QUDT_UNIT["MILLIJ-PER-M2"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_square_foot() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Square Foot (http://qudt.org/vocab/unit/BTU_IT-PER-FT2)"""
     return QUDT_UNIT["BTU_IT-PER-FT2"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_square_foot() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_square_foot() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Square Foot (http://qudt.org/vocab/unit/BTU_TH-PER-FT2)"""
     return QUDT_UNIT["BTU_TH-PER-FT2"]
 
@@ -7113,7 +7166,9 @@ def get_qudt_unit_joule_per_square_centimetre() -> URIRef:
     return QUDT_UNIT["J-PER-CENTIM2"]
 
 
-def get_qudt_unit_kilo_british_thermal_unit_international_definition_per_square_foot() -> URIRef:
+def get_qudt_unit_kilo_british_thermal_unit_international_definition_per_square_foot() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Kilo British Thermal Unit (international Definition) per Square Foot (http://qudt.org/vocab/unit/KiloBTU_IT-PER-FT2)"""
     return QUDT_UNIT["KILOBTU_IT-PER-FT2"]
 
@@ -7183,7 +7238,9 @@ def get_qudt_unit_watt_second_per_square_metre() -> URIRef:
     return QUDT_UNIT["W-SEC-PER-M2"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mole() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mole() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Pound Mole (http://qudt.org/vocab/unit/BTU_IT-PER-MOL_LB)"""
     return QUDT_UNIT["BTU_IT-PER-MOL_LB"]
 
@@ -7198,17 +7255,23 @@ def get_qudt_unit_watt_per_square_metre_pascal() -> URIRef:
     return QUDT_UNIT["W-PER-M2-PA"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mass_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mass_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Pound Mass Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-PER-LB-DEG_F)"""
     return QUDT_UNIT["BTU_IT-PER-LB-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mass_degree_rankine() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mass_degree_rankine() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Pound Mass Degree Rankine (http://qudt.org/vocab/unit/BTU_IT-PER-LB-DEG_R)"""
     return QUDT_UNIT["BTU_IT-PER-LB-DEG_R"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_pound_mass_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_pound_mass_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Pound Mass Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_TH-PER-LB-DEG_F)"""
     return QUDT_UNIT["BTU_TH-PER-LB-DEG_F"]
 
@@ -7883,12 +7946,16 @@ def get_qudt_unit_ton_of_refrigeration_hour() -> URIRef:
     return QUDT_UNIT["TON_FG-HR"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-PER-DEG_F)"""
     return QUDT_UNIT["BTU_IT-PER-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_degree_rankine() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_degree_rankine() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Degree Rankine (http://qudt.org/vocab/unit/BTU_IT-PER-DEG_R)"""
     return QUDT_UNIT["BTU_IT-PER-DEG_R"]
 
@@ -7898,12 +7965,16 @@ def get_qudt_unit_megajoule_per_kelvin() -> URIRef:
     return QUDT_UNIT["MEGAJ-PER-K"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mass() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mass() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Pound Mass (http://qudt.org/vocab/unit/BTU_IT-PER-LB)"""
     return QUDT_UNIT["BTU_IT-PER-LB"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_pound_mass() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_pound_mass() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Pound Mass (http://qudt.org/vocab/unit/BTU_TH-PER-LB)"""
     return QUDT_UNIT["BTU_TH-PER-LB"]
 
@@ -8558,12 +8629,16 @@ def get_qudt_unit_ohm_per_international_mile() -> URIRef:
     return QUDT_UNIT["OHM-PER-MI"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_pound_force_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_pound_force_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Pound Force Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-PER-LB_F-DEG_F)"""
     return QUDT_UNIT["BTU_IT-PER-LB_F-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_pound_force_degree_rankine() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_pound_force_degree_rankine() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Pound Force Degree Rankine (http://qudt.org/vocab/unit/BTU_IT-PER-LB_F-DEG_R)"""
     return QUDT_UNIT["BTU_IT-PER-LB_F-DEG_R"]
 
@@ -9373,7 +9448,9 @@ def get_qudt_unit_kilogram_per_cubic_metre_pascal() -> URIRef:
     return QUDT_UNIT["KILOGM-PER-M3-PA"]
 
 
-def get_qudt_unit_kilogram_per_mega_british_thermal_unit_international_definition() -> URIRef:
+def get_qudt_unit_kilogram_per_mega_british_thermal_unit_international_definition() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Kilogram per Mega British Thermal Unit (international Definition) (http://qudt.org/vocab/unit/KiloGM-PER-MegaBTU_IT)"""
     return QUDT_UNIT["KILOGM-PER-MEGABTU_IT"]
 
@@ -9503,7 +9580,9 @@ def get_qudt_unit_ampere_per_kilogram() -> URIRef:
     return QUDT_UNIT["A-PER-KILOGM"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_pound_mass_degree_rankine() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_pound_mass_degree_rankine() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Pound Mass Degree Rankine (http://qudt.org/vocab/unit/BTU_TH-PER-LB-DEG_R)"""
     return QUDT_UNIT["BTU_TH-PER-LB-DEG_R"]
 
@@ -10103,7 +10182,9 @@ def get_qudt_unit_square_micromole_per_quartic_metre_square_second() -> URIRef:
     return QUDT_UNIT["MICROMOL2-PER-M4-SEC2"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mole_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_pound_mole_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Pound Mole Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-PER-MOL_LB-DEG_F)"""
     return QUDT_UNIT["BTU_IT-PER-MOL_LB-DEG_F"]
 
@@ -11168,12 +11249,16 @@ def get_qudt_unit_square_degree_celsius() -> URIRef:
     return QUDT_UNIT["DEG_C2"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_TH-PER-DEG_F)"""
     return QUDT_UNIT["BTU_TH-PER-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_degree_rankine() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_per_degree_rankine() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) per Degree Rankine (http://qudt.org/vocab/unit/BTU_TH-PER-DEG_R)"""
     return QUDT_UNIT["BTU_TH-PER-DEG_R"]
 
@@ -11203,52 +11288,72 @@ def get_qudt_unit_watt_per_kelvin() -> URIRef:
     return QUDT_UNIT["W-PER-K"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_foot_per_square_foot_hour_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_foot_per_square_foot_hour_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) Foot per Square Foot Hour Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-FT-PER-FT2-HR-DEG_F)"""
     return QUDT_UNIT["BTU_IT-FT-PER-FT2-HR-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_inch_per_square_foot_hour_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_inch_per_square_foot_hour_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) Inch per Square Foot Hour Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-IN-PER-FT2-HR-DEG_F)"""
     return QUDT_UNIT["BTU_IT-IN-PER-FT2-HR-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_inch_per_square_foot_second_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_inch_per_square_foot_second_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) Inch per Square Foot Second Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-IN-PER-FT2-SEC-DEG_F)"""
     return QUDT_UNIT["BTU_IT-IN-PER-FT2-SEC-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_inch_per_hour_square_foot_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_inch_per_hour_square_foot_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) Inch per Hour Square Foot Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-IN-PER-HR-FT2-DEG_F)"""
     return QUDT_UNIT["BTU_IT-IN-PER-HR-FT2-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_inch_per_second_square_foot_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_inch_per_second_square_foot_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) Inch per Second Square Foot Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_IT-IN-PER-SEC-FT2-DEG_F)"""
     return QUDT_UNIT["BTU_IT-IN-PER-SEC-FT2-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_international_definition_per_second_foot_degree_rankine() -> URIRef:
+def get_qudt_unit_british_thermal_unit_international_definition_per_second_foot_degree_rankine() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (international Definition) per Second Foot Degree Rankine (http://qudt.org/vocab/unit/BTU_IT-PER-SEC-FT-DEG_R)"""
     return QUDT_UNIT["BTU_IT-PER-SEC-FT-DEG_R"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_foot_per_square_foot_hour_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_foot_per_square_foot_hour_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) Foot per Square Foot Hour Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_TH-FT-PER-FT2-HR-DEG_F)"""
     return QUDT_UNIT["BTU_TH-FT-PER-FT2-HR-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_foot_per_hour_square_foot_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_foot_per_hour_square_foot_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) Foot per Hour Square Foot Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_TH-FT-PER-HR-FT2-DEG_F)"""
     return QUDT_UNIT["BTU_TH-FT-PER-HR-FT2-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_inch_per_square_foot_hour_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_inch_per_square_foot_hour_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) Inch per Square Foot Hour Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_TH-IN-PER-FT2-HR-DEG_F)"""
     return QUDT_UNIT["BTU_TH-IN-PER-FT2-HR-DEG_F"]
 
 
-def get_qudt_unit_british_thermal_unit_thermochemical_definition_inch_per_square_foot_second_degree_fahrenheit() -> URIRef:
+def get_qudt_unit_british_thermal_unit_thermochemical_definition_inch_per_square_foot_second_degree_fahrenheit() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: British Thermal Unit (thermochemical Definition) Inch per Square Foot Second Degree Fahrenheit (http://qudt.org/vocab/unit/BTU_TH-IN-PER-FT2-SEC-DEG_F)"""
     return QUDT_UNIT["BTU_TH-IN-PER-FT2-SEC-DEG_F"]
 
@@ -11258,7 +11363,9 @@ def get_qudt_unit_international_table_calorie_per_second_centimetre_kelvin() -> 
     return QUDT_UNIT["CAL_IT-PER-SEC-CENTIM-K"]
 
 
-def get_qudt_unit_thermochemical_calorie_per_centimetre_second_degree_celsius() -> URIRef:
+def get_qudt_unit_thermochemical_calorie_per_centimetre_second_degree_celsius() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Thermochemical Calorie per Centimetre Second Degree Celsius (http://qudt.org/vocab/unit/CAL_TH-PER-CentiM-SEC-DEG_C)"""
     return QUDT_UNIT["CAL_TH-PER-CENTIM-SEC-DEG_C"]
 
@@ -11273,7 +11380,9 @@ def get_qudt_unit_kilocalorie_per_centimetre_second_degree_celsius() -> URIRef:
     return QUDT_UNIT["KILOCAL-PER-CENTIM-SEC-DEG_C"]
 
 
-def get_qudt_unit_kilo_international_table_calorie_per_hour_metre_degree_celsius() -> URIRef:
+def get_qudt_unit_kilo_international_table_calorie_per_hour_metre_degree_celsius() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Kilo International Table Calorie per Hour Metre Degree Celsius (http://qudt.org/vocab/unit/KiloCAL_IT-PER-HR-M-DEG_C)"""
     return QUDT_UNIT["KILOCAL_IT-PER-HR-M-DEG_C"]
 
@@ -11323,22 +11432,30 @@ def get_qudt_unit_clo() -> URIRef:
     return QUDT_UNIT["CLO"]
 
 
-def get_qudt_unit_degree_fahrenheit_hour_square_foot_per_british_thermal_unit_international_definition() -> URIRef:
+def get_qudt_unit_degree_fahrenheit_hour_square_foot_per_british_thermal_unit_international_definition() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Degree Fahrenheit Hour Square Foot per British Thermal Unit (international Definition) (http://qudt.org/vocab/unit/DEG_F-HR-FT2-PER-BTU_IT)"""
     return QUDT_UNIT["DEG_F-HR-FT2-PER-BTU_IT"]
 
 
-def get_qudt_unit_degree_fahrenheit_hour_square_foot_per_british_thermal_unit_thermochemical_definition() -> URIRef:
+def get_qudt_unit_degree_fahrenheit_hour_square_foot_per_british_thermal_unit_thermochemical_definition() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Degree Fahrenheit Hour Square Foot per British Thermal Unit (thermochemical Definition) (http://qudt.org/vocab/unit/DEG_F-HR-FT2-PER-BTU_TH)"""
     return QUDT_UNIT["DEG_F-HR-FT2-PER-BTU_TH"]
 
 
-def get_qudt_unit_square_foot_hour_degree_fahrenheit_per_british_thermal_unit_international_definition() -> URIRef:
+def get_qudt_unit_square_foot_hour_degree_fahrenheit_per_british_thermal_unit_international_definition() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Square Foot Hour Degree Fahrenheit per British Thermal Unit (international Definition) (http://qudt.org/vocab/unit/FT2-HR-DEG_F-PER-BTU_IT)"""
     return QUDT_UNIT["FT2-HR-DEG_F-PER-BTU_IT"]
 
 
-def get_qudt_unit_square_metre_hour_degree_celsius_per_kilo_international_table_calorie() -> URIRef:
+def get_qudt_unit_square_metre_hour_degree_celsius_per_kilo_international_table_calorie() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Square Metre Hour Degree Celsius per Kilo International Table Calorie (http://qudt.org/vocab/unit/M2-HR-DEG_C-PER-KiloCAL_IT)"""
     return QUDT_UNIT["M2-HR-DEG_C-PER-KILOCAL_IT"]
 
@@ -11348,22 +11465,30 @@ def get_qudt_unit_square_metre_kelvin_per_watt() -> URIRef:
     return QUDT_UNIT["M2-K-PER-W"]
 
 
-def get_qudt_unit_degree_fahrenheit_hour_per_british_thermal_unit_international_definition() -> URIRef:
+def get_qudt_unit_degree_fahrenheit_hour_per_british_thermal_unit_international_definition() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Degree Fahrenheit Hour per British Thermal Unit (international Definition) (http://qudt.org/vocab/unit/DEG_F-HR-PER-BTU_IT)"""
     return QUDT_UNIT["DEG_F-HR-PER-BTU_IT"]
 
 
-def get_qudt_unit_degree_fahrenheit_hour_per_british_thermal_unit_thermochemical_definition() -> URIRef:
+def get_qudt_unit_degree_fahrenheit_hour_per_british_thermal_unit_thermochemical_definition() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Degree Fahrenheit Hour per British Thermal Unit (thermochemical Definition) (http://qudt.org/vocab/unit/DEG_F-HR-PER-BTU_TH)"""
     return QUDT_UNIT["DEG_F-HR-PER-BTU_TH"]
 
 
-def get_qudt_unit_degree_fahrenheit_second_per_british_thermal_unit_international_definition() -> URIRef:
+def get_qudt_unit_degree_fahrenheit_second_per_british_thermal_unit_international_definition() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Degree Fahrenheit Second per British Thermal Unit (international Definition) (http://qudt.org/vocab/unit/DEG_F-SEC-PER-BTU_IT)"""
     return QUDT_UNIT["DEG_F-SEC-PER-BTU_IT"]
 
 
-def get_qudt_unit_degree_fahrenheit_second_per_british_thermal_unit_thermochemical_definition() -> URIRef:
+def get_qudt_unit_degree_fahrenheit_second_per_british_thermal_unit_thermochemical_definition() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Degree Fahrenheit Second per British Thermal Unit (thermochemical Definition) (http://qudt.org/vocab/unit/DEG_F-SEC-PER-BTU_TH)"""
     return QUDT_UNIT["DEG_F-SEC-PER-BTU_TH"]
 
@@ -11373,12 +11498,16 @@ def get_qudt_unit_kelvin_per_watt() -> URIRef:
     return QUDT_UNIT["K-PER-W"]
 
 
-def get_qudt_unit_degree_fahrenheit_hour_square_foot_per_british_thermal_unit_international_definition_inch() -> URIRef:
+def get_qudt_unit_degree_fahrenheit_hour_square_foot_per_british_thermal_unit_international_definition_inch() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Degree Fahrenheit Hour Square Foot per British Thermal Unit (international Definition) Inch (http://qudt.org/vocab/unit/DEG_F-HR-FT2-PER-BTU_IT-IN)"""
     return QUDT_UNIT["DEG_F-HR-FT2-PER-BTU_IT-IN"]
 
 
-def get_qudt_unit_degree_fahrenheit_hour_square_foot_per_british_thermal_unit_thermochemical_definition_inch() -> URIRef:
+def get_qudt_unit_degree_fahrenheit_hour_square_foot_per_british_thermal_unit_thermochemical_definition_inch() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Degree Fahrenheit Hour Square Foot per British Thermal Unit (thermochemical Definition) Inch (http://qudt.org/vocab/unit/DEG_F-HR-FT2-PER-BTU_TH-IN)"""
     return QUDT_UNIT["DEG_F-HR-FT2-PER-BTU_TH-IN"]
 
@@ -11723,7 +11852,9 @@ def get_qudt_unit_foot_second_per_cubic_inch() -> URIRef:
     return QUDT_UNIT["FT-SEC-PER-IN3"]
 
 
-def get_qudt_unit_square_foot_per_british_thermal_unit_international_definition_inch() -> URIRef:
+def get_qudt_unit_square_foot_per_british_thermal_unit_international_definition_inch() -> (
+    URIRef
+):
     """Returns the URI for QUDT unit: Square Foot per British Thermal Unit (international Definition) Inch (http://qudt.org/vocab/unit/FT2-PER-BTU_IT-IN)"""
     return QUDT_UNIT["FT2-PER-BTU_IT-IN"]
 

@@ -9,30 +9,49 @@ This repository contains a simplified implementation and examples for the paper:
 The code demonstrates how to encode ontology design patterns from OIM, SOSA, and QUDT as **composable Python functions**, enabling data scientists to generate correct RDF with simple function calls in their usual Python workflows.
 
 # Requirements
-To install the required packages, run the following command:
+
+**Using uv (recommended):**
+```bash
+uv sync
+```
+
+**Using pip:**
 ```bash
 pip install -r requirements.txt
+```
+
+# Development
+
+Install with dev dependencies:
+```bash
+uv sync --extra dev
+```
+
+Lint and format code:
+```bash
+uv run ruff check --fix .
+uv run ruff format .
 ```
 
 # Simplified ILIAD Data Harmonisation Pipeline
 This repository includes a simplified version of the ILIAD data harmonisation pipeline implemented as a Jupyter Notebook: `iliad_harmonisation_pipeline.ipynb`. The example in the notebook shows how data scientists can interact with high-level functions to harmonise sea temperature measurements. To use the Notebook, execute the following command:
 
 ```bash
-jupyter-notebook iliad_harmonisation_pipeline.ipynb 
+uv run jupyter notebook iliad_harmonisation_pipeline.ipynb
 ```
 
 # Python script for data harmonisation
 This Python script `main.py` demonstrates the same sea temperature harmonisation example as in the Jupyter Notebook. To run the script, execute the following command:
 
 ```bash
-python main.py
+uv run python main.py
 ```
 
 # Jinja Automation for Code Generation
 This repository also includes a lightweight Jinja + SPARQL pipeline to automatically generate Python functions for QUDT units and quantity-kinds. The code generation pipeline is located in the `jinja_automation/` directory. To run the code generation pipeline, execute the following command:
 
 ```bash
-python update_library.py
+uv run python update_library.py
 ```
 
 This will query the QUDT ontology using SPARQL and generate the corresponding Python functions in the `ontology_library/low_level_functions/` directory.

@@ -1,18 +1,21 @@
-from rdflib import Graph, Namespace
+from __future__ import annotations
+
 import re
 
+from rdflib import Graph
+
 from constants import (
-    OIM_OBS,
     OIM_FEATURE,
+    OIM_OBS,
     OIM_PROPERTY,
     OIM_RESULT,
-    SOSA,
     QUDT,
     QUDT_UNIT,
+    SOSA,
 )
 
 
-def bind_namespaces(g: Graph = None):
+def bind_namespaces(g: Graph | None = None) -> Graph:
     g.bind("oim-obs", OIM_OBS)
     g.bind("oim-feat", OIM_FEATURE)
     g.bind("oim-property", OIM_PROPERTY)

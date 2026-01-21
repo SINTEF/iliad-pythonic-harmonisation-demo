@@ -1,0 +1,47 @@
+[project]
+name = "iliad-pythonic-harmonisation-demo"
+version = "0.1.0"
+description = "A demonstration of pythonic data harmonisation for the ILIAD Digital Twin of the Ocean"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0.0",
+    "rdflib>=7.0.0",
+    "jinja2>=3.0.0",
+    "sparqlwrapper>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4.0",
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ontology_library", "jinja_automation"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore all rules for generated QUDT files (14K+ lines)
+"ontology_library/low_level_functions/qudt_*.py" = ["ALL"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ontology_library", "jinja_automation", "constants", "utils"]

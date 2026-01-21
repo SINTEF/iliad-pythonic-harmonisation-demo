@@ -1,10 +1,11 @@
 from string import Template as StringTemplate
+
 from jinja2 import Template as JinjaTemplate
-from SPARQLWrapper import SPARQLWrapper, JSON
+from SPARQLWrapper import JSON, SPARQLWrapper
 
 from jinja_automation.jinja_templates.jinja_templates import (
-    QUDT_UNITS_TEMPLATE,
     QUDT_QUANTITY_KINDS_TEMPLATE,
+    QUDT_UNITS_TEMPLATE,
 )
 from utils import sanitize_function_name
 
@@ -16,7 +17,7 @@ def fetch_qudt_units(
     offset=0,
 ):
     # Read the SPARQL query template from file
-    with open(query_file, "r", encoding="utf-8") as f:
+    with open(query_file, encoding="utf-8") as f:
         query_template = f.read()
 
     # Use Python's string.Template — not Jinja2
@@ -30,7 +31,7 @@ def fetch_qudt_units(
     try:
         ret = sparql.queryAndConvert()
     except Exception as e:
-        raise RuntimeError(f"Failed at offset {offset}: {e}")
+        raise RuntimeError(f"Failed at offset {offset}: {e}") from e
 
     return ret["results"]["bindings"]
 
@@ -42,7 +43,7 @@ def fetch_qudt_quantity_kinds(
     offset=0,
 ):
     # Load SPARQL query from file
-    with open(query_file, "r", encoding="utf-8") as f:
+    with open(query_file, encoding="utf-8") as f:
         query_template = f.read()
 
     # Substitute $limit and $offset placeholders
@@ -56,7 +57,7 @@ def fetch_qudt_quantity_kinds(
     try:
         ret = sparql.queryAndConvert()
     except Exception as e:
-        raise RuntimeError(f"Failed at offset {offset}: {e}")
+        raise RuntimeError(f"Failed at offset {offset}: {e}") from e
 
     return ret["results"]["bindings"]
 
@@ -232,7 +233,9 @@ def create_quantity_kind_functions():
             "name": f"get_qudt_quantity_kind_{sanitize_function_name(q['label'])}",
             "return_type": "URIRef",
             "namespace": "QUDT_QUANTITY_KIND",
-            "docstring": f"Returns the URI for QUDT quantity kind: {q['label']} ({q['uri']})",
+            "docstring": (
+                f"Returns the URI for QUDT quantity kind: {q['label']} ({q['uri']})"
+            ),
             "constant": q["uri"].split("/")[-1].upper(),
         }
         for q in quantity_kinds
@@ -244,7 +247,8 @@ def create_quantity_kind_functions():
         functions=dynamic_quantity_kind_functions,
         template_str=QUDT_QUANTITY_KINDS_TEMPLATE,
         imports=imports,
-        module_docstring="This module contains functions for the quantity kinds in QUDT.",
+        module_docstring="This module contains functions for the quantity kinds "
+        "in QUDT.",
     )
 
 

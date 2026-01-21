@@ -1,6 +1,8 @@
-from typing import Optional
-from rdflib import Graph
+from __future__ import annotations
+
 from datetime import datetime
+
+from rdflib import Graph
 
 from ontology_library.mid_level_functions.mid_level_observation_functions import (
     create_oim_sosa_observation_sea_temperature,
@@ -10,10 +12,10 @@ from ontology_library.mid_level_functions.mid_level_observation_functions import
 
 def harmonise_oim_sosa_observation_sea_temperature_degree_celsius(
     sea_temperature: float,
-    observation_id: Optional[str] = None,
-    result_time: Optional[datetime] = None,
-    feature_of_interest_id: Optional[str] = None,
-    sensor_id: Optional[str] = None,
+    observation_id: str | None = None,
+    result_time: datetime | None = None,
+    feature_of_interest_id: str | None = None,
+    sensor_id: str | None = None,
 ) -> Graph:
     obs_iri, obs_graph = create_oim_sosa_observation_sea_temperature(
         observation_id=observation_id,
@@ -26,36 +28,3 @@ def harmonise_oim_sosa_observation_sea_temperature_degree_celsius(
     )
 
     return obs_graph + result_graph
-
-    # def harmonise_oim_sosa_observation_sea_temperature_degree_celsius(
-    #     sea_temperature: float,
-    #     observation_id: Optional[str] = None,
-    #     result_time: Optional[str] = None,
-    #     feature_of_interest_id: Optional[str] = None,
-    #     sensor_id: Optional[str] = None,
-    # ) -> Graph:
-    #     # Get observation uri and observation graph
-    #     (
-    #         oim_sosa_observation_sea_temperature_uri,
-    #         oim_sosa_observation_sea_temperature_graph,
-    #     ) = create_oim_sosa_observation_sea_temperature(
-    #         observation_id,  # Optional
-    #         result_time,  # Optional
-    #         feature_of_interest_id,  # Optional
-    #         sensor_id,  # Optional
-    #     )
-    #
-    #     (
-    #         oim_sosa_result_sea_temperature_degree_celsius_uri,
-    #         oim_sosa_result_sea_temperature_degree_celsius_graph,
-    #     ) = create_oim_sosa_result_temperature_degree_celsius(
-    #         sea_temperature, oim_sosa_observation_sea_temperature_uri
-    #     )
-    #
-    #     # Combine the graphs into one
-    #     observation_graph = (
-    #         oim_sosa_observation_sea_temperature_graph
-    #         + oim_sosa_result_sea_temperature_degree_celsius_graph
-    #     )
-    #
-    return observation_graph

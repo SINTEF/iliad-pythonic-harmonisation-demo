@@ -1,10 +1,10 @@
 import pandas as pd
-from rdflib import Graph, Namespace
-from utils import bind_namespaces
+from rdflib import Graph
 
 from ontology_library.high_level_functions.high_level_observation_functions import (
     harmonise_oim_sosa_observation_sea_temperature_degree_celsius,
 )
+from utils import bind_namespaces
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
     g = Graph()
 
     # Iterate over the rows and extract each field into variables
-    for index, row in df.iterrows():
+    for _index, row in df.iterrows():
         observation_id = str(row["id"])
         sea_temperature = row["sea_temperature_celsius"]
         timestamp = row["timestamp"]

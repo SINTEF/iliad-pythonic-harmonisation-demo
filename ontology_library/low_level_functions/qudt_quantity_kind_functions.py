@@ -3,6 +3,7 @@
 from rdflib import URIRef
 from constants import QUDT_QUANTITY_KIND
 
+
 def get_qudt_quantity_kind_dimensionless_ratio() -> URIRef:
     """Returns the URI for QUDT quantity kind: Dimensionless Ratio (http://qudt.org/vocab/quantitykind/DimensionlessRatio)"""
     return QUDT_QUANTITY_KIND["DIMENSIONLESSRATIO"]
@@ -473,7 +474,9 @@ def get_qudt_quantity_kind_thermal_insulance() -> URIRef:
     return QUDT_QUANTITY_KIND["THERMALINSULANCE"]
 
 
-def get_qudt_quantity_kind_measurement_unit_for_a_quantity_approximately_proportional_to_thermal_inertia() -> URIRef:
+def get_qudt_quantity_kind_measurement_unit_for_a_quantity_approximately_proportional_to_thermal_inertia() -> (
+    URIRef
+):
     """Returns the URI for QUDT quantity kind: Measurement Unit for a quantity approximately proportional to Thermal Inertia (http://qudt.org/vocab/quantitykind/ApparentThermalInertia)"""
     return QUDT_QUANTITY_KIND["APPARENTTHERMALINERTIA"]
 
@@ -1173,7 +1176,9 @@ def get_qudt_quantity_kind_magnetic_field_strength() -> URIRef:
     return QUDT_QUANTITY_KIND["MAGNETICFIELDSTRENGTH"]
 
 
-def get_qudt_quantity_kind_average_energy_loss_per_elementary_charge_produced() -> URIRef:
+def get_qudt_quantity_kind_average_energy_loss_per_elementary_charge_produced() -> (
+    URIRef
+):
     """Returns the URI for QUDT quantity kind: Average Energy Loss per Elementary Charge Produced (http://qudt.org/vocab/quantitykind/AverageEnergyLossPerElementaryChargeProduced)"""
     return QUDT_QUANTITY_KIND["AVERAGEENERGYLOSSPERELEMENTARYCHARGEPRODUCED"]
 
@@ -1508,7 +1513,9 @@ def get_qudt_quantity_kind_cold_receptor_threshold() -> URIRef:
     return QUDT_QUANTITY_KIND["COLDRECEPTORTHRESHOLD"]
 
 
-def get_qudt_quantity_kind_combined_non_evaporative_heat_transfer_coefficient() -> URIRef:
+def get_qudt_quantity_kind_combined_non_evaporative_heat_transfer_coefficient() -> (
+    URIRef
+):
     """Returns the URI for QUDT quantity kind: Combined Non Evaporative Heat Transfer Coefficient (http://qudt.org/vocab/quantitykind/CombinedNonEvaporativeHeatTransferCoefficient)"""
     return QUDT_QUANTITY_KIND["COMBINEDNONEVAPORATIVEHEATTRANSFERCOEFFICIENT"]
 
@@ -2358,7 +2365,9 @@ def get_qudt_quantity_kind_evaporative_heat_transfer() -> URIRef:
     return QUDT_QUANTITY_KIND["EVAPORATIVEHEATTRANSFER"]
 
 
-def get_qudt_quantity_kind_combined_non_evaporative_heat_transfer_coefficient() -> URIRef:
+def get_qudt_quantity_kind_combined_non_evaporative_heat_transfer_coefficient() -> (
+    URIRef
+):
     """Returns the URI for QUDT quantity kind: Combined Non Evaporative Heat Transfer Coefficient (http://qudt.org/vocab/quantitykind/EvaporativeHeatTransferCoefficient)"""
     return QUDT_QUANTITY_KIND["EVAPORATIVEHEATTRANSFERCOEFFICIENT"]
 
@@ -4873,7 +4882,9 @@ def get_qudt_quantity_kind_measurement_unit_of_spectral_radiance() -> URIRef:
     return QUDT_QUANTITY_KIND["SPECTRALRADIANCE"]
 
 
-def get_qudt_quantity_kind_spectral_radiant_energy_density_in_terms_of_wavelength() -> URIRef:
+def get_qudt_quantity_kind_spectral_radiant_energy_density_in_terms_of_wavelength() -> (
+    URIRef
+):
     """Returns the URI for QUDT quantity kind: spectral radiant energy density in terms of wavelength (http://qudt.org/vocab/quantitykind/SpectralRadiantEnergyDensityInTermsOfWavelength)"""
     return QUDT_QUANTITY_KIND["SPECTRALRADIANTENERGYDENSITYINTERMSOFWAVELENGTH"]
 

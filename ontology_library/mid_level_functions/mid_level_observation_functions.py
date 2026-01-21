@@ -1,7 +1,8 @@
-from datetime import datetime
-from typing import Optional
-from rdflib import Graph, URIRef
+from __future__ import annotations
 
+from datetime import datetime
+
+from rdflib import Graph, URIRef
 
 from ontology_library.low_level_functions.low_level_observation_functions import (
     create_oim_sosa_observation_uri,
@@ -9,15 +10,17 @@ from ontology_library.low_level_functions.low_level_observation_functions import
     create_sosa_observation,
     create_sosa_result,
     get_oim_quantity_kind_sea_temperature,
+)
+from ontology_library.low_level_functions.qudt_unit_functions import (
     get_qudt_unit_degree_celsius,
 )
 
 
 def create_oim_sosa_observation_sea_temperature(
     observation_id: str,
-    result_time: Optional[datetime] = None,
-    feature_of_interest_id: Optional[str] = None,
-    sensor_id: Optional[str] = None,
+    result_time: datetime | None = None,
+    feature_of_interest_id: str | None = None,
+    sensor_id: str | None = None,
 ) -> Graph:
     # Get/Create observation URI
     observation_uri = create_oim_sosa_observation_uri(observation_id)

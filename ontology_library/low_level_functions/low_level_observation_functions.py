@@ -1,17 +1,13 @@
-from rdflib import URIRef, Namespace, Graph, Literal
-from rdflib.namespace import RDF, XSD
+from __future__ import annotations
+
 from datetime import datetime
-from typing import Optional
-from constants import QUDT, QUDT_UNIT, SOSA
+
+from rdflib import Graph, Literal, Namespace, URIRef
+from rdflib.namespace import RDF, XSD
+
+from constants import QUDT, SOSA
 
 # Import automatically generated functions
-from ontology_library.low_level_functions.qudt_unit_functions import (
-    get_qudt_unit_degree_celsius,
-)
-
-from ontology_library.low_level_functions.qudt_quantity_kind_functions import (
-    get_qudt_quantity_kind_temperature,
-)
 
 
 ## NAMESPACE FUNCTIONS ##
@@ -55,11 +51,11 @@ def create_oim_sosa_observation_uri(observation_id: str = None) -> URIRef:
 
 def create_sosa_observation(
     observation_uri: URIRef,
-    result_time: Optional[datetime] = None,
-    feature_of_interest_id: Optional[str] = None,
-    sensor_id: Optional[str] = None,
-    result_uri: Optional[str] = None,
-    observable_property_uri: Optional[URIRef] = None,
+    result_time: datetime | None = None,
+    feature_of_interest_id: str | None = None,
+    sensor_id: str | None = None,
+    result_uri: str | None = None,
+    observable_property_uri: URIRef | None = None,
 ) -> Graph:
     g = Graph()
     g.add((observation_uri, RDF.type, SOSA.Observation))
