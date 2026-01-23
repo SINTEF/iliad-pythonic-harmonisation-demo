@@ -121,7 +121,7 @@ This keeps QUDT-related functions up-to-date automatically.
 
 ---
 
-## Real-World Use Case: Barentswatch Pipeline
+## ILIAD Use Case: Barentswatch Pipeline
 
 The following diagram shows how the Python function library integrates into a real-world data harmonisation pipeline, fetching data from the Barentswatch API and producing validated RDF stored in PostgreSQL.
 
