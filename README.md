@@ -102,7 +102,7 @@ Example: `high_level_observation_functions.py` contains the function for transfo
 
 ---
 
-![alt text](https://github.com/SINTEF/iliad-pythonic-harmonisation-demo/blob/main/img/python_hierarchy.png)
+<img src="img/python_library_architecture.svg" alt="Functional Python Library Architecture" width="700">
 
 
 
@@ -116,6 +116,16 @@ A lightweight pipeline that:
 - Updates the library via `update_library.py`
 
 This keeps QUDT-related functions up-to-date automatically.
+
+<img src="img/lib_for_qudt_pipeline.svg" alt="QUDT Code Generation Pipeline" width="400">
+
+---
+
+## Real-World Use Case: Barentswatch Pipeline
+
+The following diagram shows how the Python function library integrates into a real-world data harmonisation pipeline, fetching data from the Barentswatch API and producing validated RDF stored in PostgreSQL.
+
+<img src="img/barentswatch_pipeline.svg" alt="Barentswatch Data Pipeline" width="300">
 
 ---
 
